@@ -1,16 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike Modification Business</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bike Modification Business</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
             color: #333;
-            background-image: url('dreamwheels.jpg'); /* Replace with the actual path to your image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -129,315 +129,327 @@
             padding: 10px;
             border-radius: 5px;
         }
+    
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.video-background .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+<header>
+<h1>Bike Modification Business</h1>
+</header>
+<nav class="nav-tabs">
+<button class="tab-link active" onclick="openTab('home')">Home</button>
+<button class="tab-link" onclick="openTab('about')">About</button>
+<button class="tab-link" onclick="openTab('financial-plan')">Financial Plan</button>
+<button class="tab-link" onclick="openTab('calculator')">Break-Even Calculator</button>
+<button class="tab-link" onclick="openTab('contact')">Contact</button>
+</nav>
+<div class="tab-content active" id="home">
+<section class="section">
+<div class="video-background">
+<video autoplay="" loop="" muted="" playsinline="">
+<source src="3836915847-preview" type="video/mp4"/>
+<div class="fallback-image"></div>
+</video>
+<div class="overlay"></div>
+</div>
 
-    <header>
-        <h1>Bike Modification Business</h1>
-    </header>
-
-    <nav class="nav-tabs">
-        <button class="tab-link active" onclick="openTab('home')">Home</button>
-        <button class="tab-link" onclick="openTab('about')">About</button>
-        <button class="tab-link" onclick="openTab('financial-plan')">Financial Plan</button>
-        <button class="tab-link" onclick="openTab('calculator')">Break-Even Calculator</button>
-        <button class="tab-link" onclick="openTab('contact')">Contact</button>
-    </nav>
-
-    <div id="home" class="tab-content active">
-        <section class="section">
-            <h2>Welcome to Our Bike Modification Business</h2>
-            <p>Transform your Motorcycle into a unique masterpiece with our expert customization services. From upgrades and custom paint jobs to frame repairs and accessory installations, we help you ride in style. Explore our financial plan and break-even analysis to understand the business's viability, or use our interactive calculator to estimate your own break-even point.</p>
-        </section>
-    </div>
-
-    <div id="about" class="tab-content">
-        <section class="section">
-            <h2>About Us</h2>
-            <p>We are passionate about creating personalized Motorcycles that reflect your style and performance needs. Our team of skilled mechanics and designers ensures top-quality modifications for every rider.</p>
-            <h3>Our Location</h3>
-            <p>789 Code Lane, Dream City, DC 67890</p>
-            <h3>Contact Information</h3>
-            <p>Phone: (555) 678-9012</p>
-            <p>Email: <a href="mailto:support@dreambyte.tech">support@dreambyte.tech</a></p>
-        </section>
-    </div>
-
-    <div id="financial-plan" class="tab-content">
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Overview</h2>
-            <div class="collapsible-content">
-                <p>A bike modification business (customizing Motorcycles, e.g., upgrades, painting, frame repairs, or accessory installations) requires a solid financial plan to ensure viability. This plan outlines startup costs, ongoing expenses, revenue streams, and projections to secure funding, manage cash flow, and achieve profitability.</p>
-                <p>The financial plan includes:</p>
-                <ul>
-                    <li>Startup Costs: One-time expenses to launch.</li>
-                    <li>Ongoing Expenses: Fixed and variable costs.</li>
-                    <li>Revenue Projections: Expected income from services.</li>
-                    <li>Key Financial Statements: Profit and loss (P&L), cash flow, and balance sheet.</li>
-                    <li>Break-Even Analysis: The point where revenues cover costs.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Hardware Requirements</h2>
-            <div class="collapsible-content">
-                <ul>
-                    <li>Internal memory – Minimum 2GB RAM</li>
-                    <li>Processor – Intel Core i3 and above / ARM-based processors (for tablets)</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Software Requirements</h2>
-            <div class="collapsible-content">
-                <ul>
-                    <li>Online: Canva (for report visuals), Google Sheets</li>
-                    <li>Offline: MS Excel</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Operating System</h2>
-            <div class="collapsible-content">
-                <p>Windows 10 and above / Linux / macOS / Android / iOS (browser-based or app-based tools)</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Theory</h2>
-            <div class="collapsible-content">
-                <h3>What is a Financial Plan?</h3>
-                <p>A financial plan is an estimate of revenue, expenses, capital requirements, and profitability for a business over time. It includes:</p>
-                <ol>
-                    <li>Startup Cost</li>
-                    <li>Fixed and Variable Costs</li>
-                    <li>Revenue Projections</li>
-                    <li>Profit & Loss Forecast</li>
-                    <li>Break-even Point</li>
-                </ol>
-                <h3>What is Break-even Analysis?</h3>
-                <p>Break-even analysis determines the minimum sales volume to cover all costs (profit = 0). Formula:</p>
-                <p><strong>Break-even Point (Units) = Fixed Costs / (Selling Price per Unit - Variable Cost per Unit)</strong></p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Step 1: Estimate Startup Costs</h2>
-            <div class="collapsible-content">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Estimated Cost Range</th>
-                            <th>Details/Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lease/Space Setup</td>
-                            <td>$5,000 - $15,000</td>
-                            <td>Security deposit, first month's rent, basic renovations.</td>
-                        </tr>
-                        <tr>
-                            <td>Equipment & Tools</td>
-                            <td>$10,000 - $25,000</td>
-                            <td>Bike repair stands, workbench/tools, painting booth, POS system.</td>
-                        </tr>
-                        <tr>
-                            <td>Initial Inventory</td>
-                            <td>$5,000 - $15,000</td>
-                            <td>Parts and supplies (tires, chains, paints, decals).</td>
-                        </tr>
-                        <tr>
-                            <td>Marketing & Branding</td>
-                            <td>$1,000 - $5,000</td>
-                            <td>Website, social media ads, business cards.</td>
-                        </tr>
-                        <tr>
-                            <td>Legal & Permits</td>
-                            <td>$1,000 - $3,000</td>
-                            <td>Business registration, liability insurance, permits.</td>
-                        </tr>
-                        <tr>
-                            <td>Professional Services</td>
-                            <td>$1,500 - $4,000</td>
-                            <td>Lawyer, accountant setup.</td>
-                        </tr>
-                        <tr>
-                            <td>Emergency Fund</td>
-                            <td>$5,000 - $10,000</td>
-                            <td>3 months of operating costs.</td>
-                        </tr>
-                        <tr>
-                            <td>Total Startup Costs</td>
-                            <td>$28,500 - $77,000</td>
-                            <td>Varies by location; rural: $20,000-$40,000; urban: $40,000-$80,000.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Step 2: Outline Ongoing Expenses</h2>
-            <div class="collapsible-content">
-                <h3>Fixed Costs (Monthly, ~$4,000-$8,000):</h3>
-                <ul>
-                    <li>Rent/Utilities: $1,500-$3,000</li>
-                    <li>Insurance: $100-$250</li>
-                    <li>Salaries: $3,000-$5,000 (plus taxes/benefits)</li>
-                    <li>Marketing: $200-$500</li>
-                    <li>Software/Supplies: $100-$300</li>
-                </ul>
-                <h3>Variable Costs (Per Job, ~40-60% of revenue):</h3>
-                <ul>
-                    <li>Parts/Materials: $50-$150 per modification</li>
-                    <li>Labor (outsourced): $20-$50/hour</li>
-                    <li>Shipping/Supplies: 5-10% of job cost</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Step 3: Project Revenues</h2>
-            <div class="collapsible-content">
-                <h3>Revenue Streams:</h3>
-                <ul>
-                    <li>Modification Services: $150-$500/job</li>
-                    <li>Add-Ons: Accessories (10-20% of revenue)</li>
-                    <li>Potential: Rentals, partnerships</li>
-                </ul>
-                <h3>First Year Projections:</h3>
-                <ul>
-                    <li>Monthly Jobs: 30 at $250 = $7,500/month</li>
-                    <li>Annual Revenue: $90,000</li>
-                    <li>Growth: Year 2: $120,000; Year 3: $150,000</li>
-                    <li>Gross Margin: 40-60%</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Step 4: Prepare Key Financial Statements</h2>
-            <div class="collapsible-content">
-                <h3>Profit & Loss (P&L):</h3>
-                <ul>
-                    <li>Year 1 Monthly Average: Revenue $7,500; COGS $3,750; Expenses $5,000; Net Loss -$1,250 (breakeven by month 6-12)</li>
-                </ul>
-                <h3>Cash Flow:</h3>
-                <ul>
-                    <li>Inflows: Sales, loans</li>
-                    <li>Outflows: Expenses, inventory</li>
-                    <li>Tip: Positive cash flow in 6-12 months; $10,000-$20,000 buffer</li>
-                </ul>
-                <h3>Balance Sheet:</h3>
-                <ul>
-                    <li>Assets: $50,000; Liabilities: $20,000; Equity: $30,000</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Break-Even Analysis</h2>
-            <div class="collapsible-content">
-                <p>Formula: <strong>Break-Even Point (Units) = Fixed Costs / (Price per Job - Variable Cost per Job)</strong></p>
-                <h3>Example:</h3>
-                <ul>
-                    <li>Fixed Costs: $5,000/month</li>
-                    <li>Job Price: $250</li>
-                    <li>Variable Cost: $100</li>
-                    <li>Contribution Margin: $150</li>
-                    <li>Break-Even: 33 jobs ($8,250 revenue)</li>
-                </ul>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Month</th>
-                            <th>Units Sold</th>
-                            <th>Revenue ($)</th>
-                            <th>Total Cost ($)</th>
-                            <th>Profit ($)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>15</td>
-                            <td>75,000</td>
-                            <td>87,000</td>
-                            <td>-12,000</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>20</td>
-                            <td>100,000</td>
-                            <td>97,000</td>
-                            <td>+3,000</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>25</td>
-                            <td>125,000</td>
-                            <td>107,000</td>
-                            <td>+18,000</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>40</td>
-                            <td>200,000</td>
-                            <td>150,000</td>
-                            <td>+50,000</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 onclick="toggleSection(this)">Conclusion</h2>
-            <div class="collapsible-content">
-                <p>The business needs 40 jobs/month to cover costs. Growth beyond this ensures profitability.</p>
-            </div>
-        </section>
-    </div>
-
-    <div id="calculator" class="tab-content">
-        <section class="section">
-            <h2>Break-Even Calculator</h2>
-            <div class="calculator">
-                <h3>Calculate Your Break-Even Point</h3>
-                <label>Monthly Fixed Costs ($): <input type="number" id="fixedCosts" value="5000"></label>
-                <label>Average Job Price ($): <input type="number" id="jobPrice" value="250"></label>
-                <label>Variable Cost per Job ($): <input type="number" id="variableCost" value="100"></label>
-                <button onclick="calculateBreakEven()">Calculate</button>
-                <p id="result"></p>
-            </div>
-            <div id="chart-container">
-                <canvas id="breakEvenChart"></canvas>
-            </div>
-        </section>
-    </div>
-
-    <div id="contact" class="tab-content">
-        <section class="section">
-            <h2>Contact Us</h2>
-            <p>Reach out for inquiries or to start your bike modification journey!</p>
-            <p><strong>Address:</strong> 789 Code Lane, Dream City, DC 67890</p>
-            <p><strong>Phone:</strong> (555) 678-9012</p>
-            <p><strong>Email:</strong> <a href="mailto:support@dreambyte.tech">support@dreambyte.tech</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Bike Modification Business</p>
-    </footer>
-
-    <script>
+<h2>Welcome to Our Bike Modification Business</h2>
+<p>Transform your Motorcycle into a unique masterpiece with our expert customization services. From upgrades and custom paint jobs to frame repairs and accessory installations, we help you ride in style. Explore our financial plan and break-even analysis to understand the business's viability, or use our interactive calculator to estimate your own break-even point.</p>
+</section>
+</div>
+<div class="tab-content" id="about">
+<section class="section">
+<h2>About Us</h2>
+<p>We are passionate about creating personalized Motorcycles that reflect your style and performance needs. Our team of skilled mechanics and designers ensures top-quality modifications for every rider.</p>
+<h3>Our Location</h3>
+<p>789 Code Lane, Dream City, DC 67890</p>
+<h3>Contact Information</h3>
+<p>Phone: (555) 678-9012</p>
+<p>Email: <a href="mailto:support@dreambyte.tech">support@dreambyte.tech</a></p>
+</section>
+</div>
+<div class="tab-content" id="financial-plan">
+<section class="section">
+<h2 onclick="toggleSection(this)">Overview</h2>
+<div class="collapsible-content">
+<p>A bike modification business (customizing Motorcycles, e.g., upgrades, painting, frame repairs, or accessory installations) requires a solid financial plan to ensure viability. This plan outlines startup costs, ongoing expenses, revenue streams, and projections to secure funding, manage cash flow, and achieve profitability.</p>
+<p>The financial plan includes:</p>
+<ul>
+<li>Startup Costs: One-time expenses to launch.</li>
+<li>Ongoing Expenses: Fixed and variable costs.</li>
+<li>Revenue Projections: Expected income from services.</li>
+<li>Key Financial Statements: Profit and loss (P&amp;L), cash flow, and balance sheet.</li>
+<li>Break-Even Analysis: The point where revenues cover costs.</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Hardware Requirements</h2>
+<div class="collapsible-content">
+<ul>
+<li>Internal memory – Minimum 2GB RAM</li>
+<li>Processor – Intel Core i3 and above / ARM-based processors (for tablets)</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Software Requirements</h2>
+<div class="collapsible-content">
+<ul>
+<li>Online: Canva (for report visuals), Google Sheets</li>
+<li>Offline: MS Excel</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Operating System</h2>
+<div class="collapsible-content">
+<p>Windows 10 and above / Linux / macOS / Android / iOS (browser-based or app-based tools)</p>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Theory</h2>
+<div class="collapsible-content">
+<h3>What is a Financial Plan?</h3>
+<p>A financial plan is an estimate of revenue, expenses, capital requirements, and profitability for a business over time. It includes:</p>
+<ol>
+<li>Startup Cost</li>
+<li>Fixed and Variable Costs</li>
+<li>Revenue Projections</li>
+<li>Profit &amp; Loss Forecast</li>
+<li>Break-even Point</li>
+</ol>
+<h3>What is Break-even Analysis?</h3>
+<p>Break-even analysis determines the minimum sales volume to cover all costs (profit = 0). Formula:</p>
+<p><strong>Break-even Point (Units) = Fixed Costs / (Selling Price per Unit - Variable Cost per Unit)</strong></p>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Step 1: Estimate Startup Costs</h2>
+<div class="collapsible-content">
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Estimated Cost Range</th>
+<th>Details/Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lease/Space Setup</td>
+<td>$5,000 - $15,000</td>
+<td>Security deposit, first month's rent, basic renovations.</td>
+</tr>
+<tr>
+<td>Equipment &amp; Tools</td>
+<td>$10,000 - $25,000</td>
+<td>Bike repair stands, workbench/tools, painting booth, POS system.</td>
+</tr>
+<tr>
+<td>Initial Inventory</td>
+<td>$5,000 - $15,000</td>
+<td>Parts and supplies (tires, chains, paints, decals).</td>
+</tr>
+<tr>
+<td>Marketing &amp; Branding</td>
+<td>$1,000 - $5,000</td>
+<td>Website, social media ads, business cards.</td>
+</tr>
+<tr>
+<td>Legal &amp; Permits</td>
+<td>$1,000 - $3,000</td>
+<td>Business registration, liability insurance, permits.</td>
+</tr>
+<tr>
+<td>Professional Services</td>
+<td>$1,500 - $4,000</td>
+<td>Lawyer, accountant setup.</td>
+</tr>
+<tr>
+<td>Emergency Fund</td>
+<td>$5,000 - $10,000</td>
+<td>3 months of operating costs.</td>
+</tr>
+<tr>
+<td>Total Startup Costs</td>
+<td>$28,500 - $77,000</td>
+<td>Varies by location; rural: $20,000-$40,000; urban: $40,000-$80,000.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Step 2: Outline Ongoing Expenses</h2>
+<div class="collapsible-content">
+<h3>Fixed Costs (Monthly, ~$4,000-$8,000):</h3>
+<ul>
+<li>Rent/Utilities: $1,500-$3,000</li>
+<li>Insurance: $100-$250</li>
+<li>Salaries: $3,000-$5,000 (plus taxes/benefits)</li>
+<li>Marketing: $200-$500</li>
+<li>Software/Supplies: $100-$300</li>
+</ul>
+<h3>Variable Costs (Per Job, ~40-60% of revenue):</h3>
+<ul>
+<li>Parts/Materials: $50-$150 per modification</li>
+<li>Labor (outsourced): $20-$50/hour</li>
+<li>Shipping/Supplies: 5-10% of job cost</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Step 3: Project Revenues</h2>
+<div class="collapsible-content">
+<h3>Revenue Streams:</h3>
+<ul>
+<li>Modification Services: $150-$500/job</li>
+<li>Add-Ons: Accessories (10-20% of revenue)</li>
+<li>Potential: Rentals, partnerships</li>
+</ul>
+<h3>First Year Projections:</h3>
+<ul>
+<li>Monthly Jobs: 30 at $250 = $7,500/month</li>
+<li>Annual Revenue: $90,000</li>
+<li>Growth: Year 2: $120,000; Year 3: $150,000</li>
+<li>Gross Margin: 40-60%</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Step 4: Prepare Key Financial Statements</h2>
+<div class="collapsible-content">
+<h3>Profit &amp; Loss (P&amp;L):</h3>
+<ul>
+<li>Year 1 Monthly Average: Revenue $7,500; COGS $3,750; Expenses $5,000; Net Loss -$1,250 (breakeven by month 6-12)</li>
+</ul>
+<h3>Cash Flow:</h3>
+<ul>
+<li>Inflows: Sales, loans</li>
+<li>Outflows: Expenses, inventory</li>
+<li>Tip: Positive cash flow in 6-12 months; $10,000-$20,000 buffer</li>
+</ul>
+<h3>Balance Sheet:</h3>
+<ul>
+<li>Assets: $50,000; Liabilities: $20,000; Equity: $30,000</li>
+</ul>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Break-Even Analysis</h2>
+<div class="collapsible-content">
+<p>Formula: <strong>Break-Even Point (Units) = Fixed Costs / (Price per Job - Variable Cost per Job)</strong></p>
+<h3>Example:</h3>
+<ul>
+<li>Fixed Costs: $5,000/month</li>
+<li>Job Price: $250</li>
+<li>Variable Cost: $100</li>
+<li>Contribution Margin: $150</li>
+<li>Break-Even: 33 jobs ($8,250 revenue)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Units Sold</th>
+<th>Revenue ($)</th>
+<th>Total Cost ($)</th>
+<th>Profit ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>15</td>
+<td>75,000</td>
+<td>87,000</td>
+<td>-12,000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>20</td>
+<td>100,000</td>
+<td>97,000</td>
+<td>+3,000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>25</td>
+<td>125,000</td>
+<td>107,000</td>
+<td>+18,000</td>
+</tr>
+<tr>
+<td>4</td>
+<td>40</td>
+<td>200,000</td>
+<td>150,000</td>
+<td>+50,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section">
+<h2 onclick="toggleSection(this)">Conclusion</h2>
+<div class="collapsible-content">
+<p>The business needs 40 jobs/month to cover costs. Growth beyond this ensures profitability.</p>
+</div>
+</section>
+</div>
+<div class="tab-content" id="calculator">
+<section class="section">
+<h2>Break-Even Calculator</h2>
+<div class="calculator">
+<h3>Calculate Your Break-Even Point</h3>
+<label>Monthly Fixed Costs ($): <input id="fixedCosts" type="number" value="5000"/></label>
+<label>Average Job Price ($): <input id="jobPrice" type="number" value="250"/></label>
+<label>Variable Cost per Job ($): <input id="variableCost" type="number" value="100"/></label>
+<button onclick="calculateBreakEven()">Calculate</button>
+<p id="result"></p>
+</div>
+<div id="chart-container">
+<canvas id="breakEvenChart"></canvas>
+</div>
+</section>
+</div>
+<div class="tab-content" id="contact">
+<section class="section">
+<h2>Contact Us</h2>
+<p>Reach out for inquiries or to start your bike modification journey!</p>
+<p><strong>Address:</strong> 789 Code Lane, Dream City, DC 67890</p>
+<p><strong>Phone:</strong> (555) 678-9012</p>
+<p><strong>Email:</strong> <a href="mailto:support@dreambyte.tech">support@dreambyte.tech</a></p>
+</section>
+</div>
+<footer>
+<p>© 2025 Bike Modification Business</p>
+</footer>
+<script>
         // Tab switching
         function openTab(tabId) {
             document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
@@ -517,9 +529,5 @@
         // Initialize chart with default values
         updateChart(5000, 250, 100, 33);
     </script>
-
 </body>
-
 </html>
-
-
